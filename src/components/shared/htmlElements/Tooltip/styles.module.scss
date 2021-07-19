@@ -1,0 +1,25 @@
+@import '../../../../general';
+
+.wrapper {
+  height: fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: $black;
+  border-radius: 5px;
+  position: fixed;
+  opacity: 0.9;
+  display: inline-block;
+  z-index: 100;
+  
+  &.withArrow {
+    &::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 16px;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-right: 6px solid rgba(0,0,0, 0.9);
+    }
+  }
+}

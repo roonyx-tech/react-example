@@ -1,0 +1,23 @@
+.confirmDialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &Title {
+    margin-top: 0;
+  }
+
+  &Buttons {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    button {
+      white-space: nowrap;
+    }
+
+    & > button:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import '../../../general';
+
+.btnBack {
+  width: fit-content;
+  padding: 0 24px 0;
+  margin-bottom: 30px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content {
+  padding: 20px 0 20px;
+}

@@ -1,0 +1,34 @@
+@import '../../../mixins';
+@import '../../../variables';
+
+.popupContent {
+  width: 100%;
+
+  .popupTitle {
+    margin: 0;
+    margin-bottom: rem(12);
+  }
+
+  .popupDescription {
+    margin: 0;
+    margin-bottom: rem(32);
+    line-height: rem(20);
+    color: $gray-40-2;
+  }
+
+  .buttons {
+    display: flex;
+    max-width: rem(324);
+    width: 100%;
+    justify-content: space-between;
+    margin-top: rem(36);
+
+    .leftButton {
+      margin-right: rem(12);
+    }
+  }
+
+  @media screen and (min-width: rem(520)) {
+    width: rem(432);
+  }
+}

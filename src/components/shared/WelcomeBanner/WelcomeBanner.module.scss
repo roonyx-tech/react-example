@@ -1,0 +1,41 @@
+@import '../../../general';
+@import '../../../mixins';
+
+.main {
+  background-color: $turquoise;
+  border-radius: 24px;
+  padding: 0 rem(44);
+  display: flex;
+  margin-bottom: rem(24);
+  margin-top: rem(48);
+  align-items: flex-end;
+
+  .bannerInfo {
+    margin-top: rem(36);
+    margin-bottom: rem(24);
+
+    .title {
+      font-size: rem(20);
+      margin: 0;
+      margin-bottom: rem(12);
+    }
+
+    .muted {
+      color: $font-black;
+      line-height: 20px;
+    }
+
+    .bannerAppButton {
+      max-width: rem(232);
+
+      .link {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+
+  @media screen and (max-width: 843px) {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,67 @@
+.wrapper {
+  display: flex;
+  background: #E5E5E5;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+
+  h2 {
+    color: #F44336;
+    font-size: 36px;
+    padding: 50px 0 90px 0;
+  }
+  
+  .backLink {
+    
+    span {
+      color: #2196F3;
+      cursor: pointer;
+      margin-left: 16px;
+      margin-right: 32px;
+    }
+  }
+}
+
+.mdLogoWrapper {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  padding: 0 200px;
+  display: flex;
+}
+
+.mdLogoWrapper span {
+  width: 110px;
+  font-size: 12px;
+  color: #A6A6AC;
+  /* line-height: 19px; */
+  padding-top: 5px;
+}
+
+.mdLogoWrapper img {
+  width: 80px;
+  margin-left: 10px;
+}
+
+.imgWrapper {
+  width: calc(100vw - 600px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.imgWrapper .picture {
+  width: 70%;
+}

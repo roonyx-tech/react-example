@@ -1,0 +1,28 @@
+@import "../../../variables";
+
+.popup {
+  z-index: 10;
+  position: absolute;
+  top: -110px;
+  right: -90px;
+  min-width: 230px;
+  text-align: justify;
+  background: white;
+  padding: 16px;
+  border-radius: 5px;
+  color: $font-black !important;
+  border: 1px solid $light-gray-border;
+  box-shadow: 0px 16px 20px rgba(38, 62, 84, 0.12);
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+
+    button {
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+}

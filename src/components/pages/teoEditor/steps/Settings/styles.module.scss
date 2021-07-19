@@ -1,0 +1,69 @@
+@import '../../../../../general';
+@import '../../../../../variables';
+
+$h4-color: #798599;
+$cancelButton-bg: #ffffff;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  margin-top: 48px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: 'Ubuntu', sans-serif;
+
+  h3 {
+    margin-bottom: 6px;
+  }
+
+  h4 {
+    margin: 0 0 48px;
+    color: $h4-color;
+  }
+
+  .inputWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    input {
+      width: 300px;
+    }
+
+    span {
+      font-size: 13px;
+      color: #798599;
+      margin-bottom: 5px;
+    }
+  }
+
+  .inputsWrapper {
+    width: 650px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btns {
+    margin-top: 60px;
+
+    .appButton {
+      margin-right: 12px;
+      font-size: 16px;
+      border: 1px solid $accent-100;
+    }
+
+    .cancelButton {
+      background-color: #ffffff;
+      color: $accent-100;
+    }
+  }
+}

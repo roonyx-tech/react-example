@@ -1,0 +1,32 @@
+@import '../../../general';
+
+.input {
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid $light-gray-border;
+  background: white;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  width: 100%;
+
+  &:hover {
+    border-color: $accent-40;
+  }
+
+  &:focus {
+    border-color: #1565c0;
+  }
+
+  &:disabled {
+    border-color: $light-gray-border;
+    background-color: $disabled-input;
+  }
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

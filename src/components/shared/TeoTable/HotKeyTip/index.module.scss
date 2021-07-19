@@ -1,0 +1,35 @@
+@import "../../../../general";
+
+.infoWrapper {
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    color: $black;
+    background-color: white;
+    padding: 10px 20px 10px 0;
+    font-size: 12px;
+    border-radius: 5px;
+    width: 550px;
+
+    p {
+      width: 260px;
+      font-weight: bold;
+    }
+
+    .key {
+      font-size: 18px;
+      border-radius: 3px;
+      border: 1px solid $gray-40;
+      display: inline-block;
+      min-width: 24px;
+      text-align: center;
+    }
+
+    .ctrl {
+      font-size: 12px;
+      padding: 6px 3px 3px 3px;
+      // width: 30px;
+    }
+  }
+}

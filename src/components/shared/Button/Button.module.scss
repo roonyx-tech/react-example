@@ -1,0 +1,82 @@
+@import '../../../variables';
+@import '../../../mixins';
+
+.buttonElement {
+  // width: 100%;
+  padding: 0 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid $accent-100;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  font-size: rem(16);
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  transition: color 100ms ease-in, background-color 100ms ease-in, background 100ms ease-in;
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &_big {
+    max-height: 42px;
+    min-height: 42px;
+  }
+
+  &_small {
+    max-height: 36px;
+    min-height: 36px;
+  }
+
+  &_primary {
+    background: $accent-100;
+    color: $background;
+
+    &:hover {
+      background-color: $accent-40;
+      border-color: $accent-40;
+    }
+
+    &:active {
+      background-color: $accent-90;
+      border-color: $accent-90;
+    }
+
+    &:disabled {
+      background-color: $gray-border;
+      border-color: $gray-border;
+    }
+  }
+
+  &_outline {
+    color: $accent-100;
+    background: transparent;
+
+    &:hover {
+      border-color: $accent-40;
+      color: $accent-40;
+    }
+
+    &:active {
+      border-color: $accent-90;
+      color: $accent-90;
+    }
+
+    &:disabled {
+      border-color: $gray-border;
+      color: $gray-40-2;
+      background: $gray-10;
+    }
+  }
+
+  .buttonIcon {
+    margin-right: 12px;
+    width: 16px;
+  }
+
+  svg {
+    width: inherit;
+    height: inherit;
+  }
+}

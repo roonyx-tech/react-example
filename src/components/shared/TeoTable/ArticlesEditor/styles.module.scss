@@ -1,0 +1,163 @@
+@import '../../../../general';
+
+$line-border-color: #e1e5eb;
+$desc-color: #798599;
+
+.buttonContainer {
+  display: flex;
+  margin-top: 26px;
+
+  .button {
+    width: 132px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+
+    &Change {
+      width: 250px;
+      height: 36px;
+      border: 1px solid $accent-100;
+      background-color: #fff;
+      color: $accent-100;
+    }
+
+    &Cancel {
+      border: 1px solid $accent-100;
+      background-color: #fff;
+      color: $accent-100;
+      margin-left: 12px;
+    }
+
+    &Save {
+      border: 1px solid $accent-100;
+      background-color: $accent-100;
+      color: #fff;
+    }
+
+    &[disabled] {
+      opacity: 0.3;
+    }
+  }
+}
+
+h2 {
+  font-size: 24px;
+  margin: 24px 0 12px;
+}
+
+h4 {
+  font-size: 16px;
+  color: $desc-color;
+  margin: 0 0 36px;
+}
+
+.scrollContainer {
+  max-height: 300px;
+  min-width: 400px;
+  overflow-y: scroll;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .block {
+    width: 100%;
+  }
+
+  .blockTitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    h3 {
+      align-self: flex-start;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  $line-width: 94%;
+
+  .line {
+    width: $line-width;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 6px;
+    position: relative;
+    border: 1px solid $line-border-color;
+    padding: 16px 12px;
+    border-radius: 6px;
+
+    &:first-child {
+      margin-top: 20px;
+    }
+
+    .name {
+      margin-left: 12px;
+      max-width: 250px;
+      font-size: 16px;
+    }
+
+    .other {
+      display: flex;
+      width: 200px;
+      position: absolute;
+      right: 20px;
+
+      span {
+        color: #798599;
+        font-size: 14px;
+        margin-left: 36px;
+      }
+      .cashflowType {
+        display: flex;
+        justify-content: flex-start;
+        width: 100px;
+      }
+
+      .teoItem {
+        display: flex;
+        justify-content: flex-start;
+        width: 100px;
+      }
+    }
+
+    img {
+      margin-left: 5px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .shift-1 {
+    width: $line-width - 10%;
+  }
+  .shift-2 {
+    width: $line-width - 20%;
+  }
+  .shift-3 {
+    width: $line-width - 30%;
+  }
+}
+
+.justified {
+  min-width: 500px;
+}

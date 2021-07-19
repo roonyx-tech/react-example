@@ -1,0 +1,38 @@
+@import "../../../general";
+
+.wrapper {
+  background-color: $accent-10;
+  border-radius: 12px;
+  padding: 1.25vw 1.25vw 1vw 1.25vw;
+  margin-bottom: 1vw;
+  display: flex;
+
+  &:not(:first-child) {
+    margin-left: 1vw;
+  }
+
+  &:not(:last-child) {
+    margin-right: 1vw;
+  }
+
+  .column {
+    flex-shrink: 0;
+
+    &:not(:last-child) {
+      margin-right: 3vw;
+    }
+  }
+
+  .title {
+    font-size: 0.7vw;
+    margin-top: -4px;
+    font-weight: 100;
+  }
+
+  .metric {
+    font-size: 1.3vw;
+    margin-top: -2px;
+    line-height: 41px;
+    margin-bottom: 0;
+  }
+}

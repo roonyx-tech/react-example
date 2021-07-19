@@ -1,0 +1,12 @@
+@import "../../../general";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+
+  .switch {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+  }
+}

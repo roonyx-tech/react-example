@@ -1,0 +1,9 @@
+@import '../../../variables';
+@import '../../../mixins';
+
+.welcomeCards {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(rem(356), 1fr));
+  grid-gap: 1.5rem;
+}

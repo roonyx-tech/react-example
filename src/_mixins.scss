@@ -1,0 +1,40 @@
+@import './variables';
+
+@mixin app-scrollbar {
+  & {
+    scrollbar-width: thin;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #cfd4dc;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $accent-60;
+  }
+}
+
+@function rem($pixels, $context: $main-font-size) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}

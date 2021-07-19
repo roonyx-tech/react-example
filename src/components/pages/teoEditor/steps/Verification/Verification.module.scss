@@ -1,0 +1,13 @@
+@import '../Settings/styles.module.scss';
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  .cardsRow {
+    display: flex;
+  }
+}

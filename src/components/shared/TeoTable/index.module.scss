@@ -1,0 +1,145 @@
+@import '../../../general';
+@import '../../../mixins';
+
+.wrapper {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 34px;
+
+  .column {
+    .title {
+      font-weight: bold;
+      height: fit-content;
+      margin-bottom: 16px;
+
+      .blue {
+        color: $accent-60;
+      }
+
+      .tip {
+        font-size: 12px;
+        color: $gray-40-2;
+        margin: 0;
+        font-weight: 500;
+        line-height: 16px;
+      }
+    }
+
+    .hotKeysTipWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .switcher {
+        margin: 0 24px 22px 0;
+      }
+    }
+
+    .scrollContainer {
+      max-height: 450px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      padding-right: 6px;
+      @include app-scrollbar;
+
+      .bordered {
+        border: 1px solid $light-gray-border;
+        border-radius: 12px;
+      }
+
+      .article {
+        margin-bottom: 8px;
+        padding: 16px 60px 16px 24px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: 0.3s;
+        position: relative;
+
+        &:hover {
+          border: 1px solid $accent-40;
+          color: $accent-40;
+        }
+
+        .checked {
+          height: 16px;
+          width: 16px;
+          margin-right: 20px;
+        }
+
+        .cross {
+          height: 16px;
+          width: 16px;
+          position: absolute;
+          right: 24px;
+          top: 16px;
+          cursor: pointer;
+        }
+
+        .tooltip {
+          color: white;
+        }
+        
+        .tooltipIcon {
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+      }
+
+      .active {
+        border: 1px solid $accent-60;
+
+        &:hover {
+          border: 1px solid $accent-60;
+          color: $accent-60;
+        }
+      }
+    }
+  }
+}
+
+.yearRow {
+  display: grid;
+  column-gap: 14px;
+
+  .sub {
+    color: $gray-40-2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 31px;
+    padding-bottom: 23px;
+
+    span {
+      &:last-child {
+        margin-top: 25px;
+      }
+    }
+  }
+
+  .months {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 14px;
+    padding-bottom: 4px;
+  }
+
+  .month {
+    padding-bottom: 12px;
+
+    p {
+      color: $gray-40-2;
+      margin: 0 0 4px 0;
+      font-size: 14px;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}

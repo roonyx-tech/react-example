@@ -1,0 +1,19 @@
+@import '../../../../general';
+@import '../../../../variables';
+
+.btns {
+  margin: 56px 0 0;
+  font-family: 'Ubuntu', sans-serif;
+
+  .appButton {
+    font-size: 16px;
+    border: 1px solid $accent-100;
+    margin-right: 12px;
+
+    &Prev,
+    &Cancel {
+      background-color: #ffffff;
+      color: $accent-100;
+    }
+  }
+}
