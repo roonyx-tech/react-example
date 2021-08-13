@@ -1,27 +1,28 @@
 # react-example
 
-## О модуле
+## About
 
-Приложение является частью финансовой системы для рассчета показателей проектов (например бюджет, облиго, расходы и т.д.), прогнозирования и инвестиционного анализа.
+The application is a part of the financial system that calculates project indicators (eg budget, commitment, costs, etc.), makes forecasts and analyzes investments
 
-В данном модуле представлена часть функционала рассчета технико экономического обоснования (ТЭО) проекта.
+This module presents a part of the functional for calculating the feasibility study (FS) of the project
 
-Модуль представляет из себя редактор ТЭО с четырьмя шагами:
+The module is the FS-editor and contains four steps:
 
-1. Настройка инвестиционного периода и срока полезного использования
-2. Редактирование проектных расходов
-3. Редактирование постпроектных расходов
-4. Редактирование экономического эффекта
+1. Setting up the investment period
+2. Editing project costs
+3. Editing post-project costs
+4. Editing the economic effect
 
-На основе заполненных данных в режиме реального времени высчитываются такие финансовые показатели как IRR, NPV, PP, DPP и EBITDA
-
+Based on the completed data, such financial indicators as IRR, NPV, PP, DPP and EBITDA are calculated in real time
 
 ## Технологии
 
-Модуль является React-проектом, написан на языке программирования Typescript.
+The module is a React project written on Typescript
 
-Для связи с backend приложением используется Apollo GraphQL.
+The application uses:
 
-Для авторизации используется система Keycloak.
+- Apollo GraphQL to connect to the backend
 
-Для отлавливания ошибок в production режиме используется Sentry.
+- Keycloak for authentication
+
+- Sentry to catch errors in the production mode
