@@ -15,7 +15,7 @@ The module is the FS-editor and contains four steps:
 
 Based on the completed data, such financial indicators as IRR, NPV, PP, DPP and EBITDA are calculated in real time
 
-## Технологии
+## Tech
 
 The module is a React project written on Typescript
 
